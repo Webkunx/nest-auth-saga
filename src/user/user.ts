@@ -3,11 +3,9 @@ import { Length } from "class-validator";
 import * as bcrypt from "bcrypt";
 
 export class User {
-  @Length(5)
   @prop({ required: false })
   email: string;
 
-  @Length(5)
   @prop({ required: true })
   password: string;
 
